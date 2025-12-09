@@ -1,0 +1,131 @@
+.model-viewer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewer-toolbar {
+  background: #2a2a2a;
+  border-bottom: 1px solid #444;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toolbar-left h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.model-notes {
+  color: #4a9eff;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  background: rgba(74, 158, 255, 0.1);
+  border-radius: 4px;
+}
+
+.model-notes strong {
+  color: #6ab0ff;
+}
+
+.model-type-badge {
+  background: #4a9eff;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.toolbar-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.toolbar-button {
+  background: #333;
+  border: 1px solid #555;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.toolbar-button:hover {
+  background: #444;
+  border-color: #666;
+}
+
+.toolbar-button.active {
+  background: #4a9eff;
+  border-color: #4a9eff;
+}
+
+.viewer-content {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.model-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #888;
+  text-align: center;
+  padding: 2rem;
+}
+
+.placeholder-hint {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.measurement-hint {
+  background: #2a2a2a;
+  border-top: 1px solid #444;
+  padding: 0.8rem 1.5rem;
+  color: #4a9eff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.measurements-panel {
+  background: #2a2a2a;
+  border-top: 1px solid #444;
+  padding: 1rem 1.5rem;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.measurements-panel h4 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.measurement-item {
+  color: #aaa;
+  font-size: 0.85rem;
+  padding: 0.3rem 0;
+}
+
