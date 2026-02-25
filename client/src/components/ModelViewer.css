@@ -8,6 +8,7 @@
 
 .model-viewer canvas {
   display: block;
+  touch-action: none;
 }
 
 .viewer-loading {

@@ -312,6 +312,6 @@ app.use((err, req, res, next) => {
   next();
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Wrecked Apartment server running on http://localhost:${PORT}`);
 });

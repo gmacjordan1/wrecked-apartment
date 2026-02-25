@@ -398,3 +398,55 @@
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 768px) {
+  .admin-panel {
+    padding: 1rem;
+  }
+
+  .admin-tabs {
+    flex-wrap: wrap;
+  }
+
+  .admin-tab-context {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0.25rem;
+  }
+
+  .admin-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .item-actions {
+    justify-content: flex-end;
+  }
+
+  .admin-form input,
+  .admin-form textarea,
+  .admin-form select {
+    padding: 0.65rem 0.75rem;
+    font-size: 16px; /* prevents iOS zoom */
+  }
+
+  .login-form input {
+    padding: 0.65rem 0.75rem;
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    min-height: 44px;
+  }
+
+  .btn-sm {
+    padding: 0.45rem 0.75rem;
+    min-height: 36px;
+  }
+
+  .upload-zone {
+    padding: 1.5rem;
+  }
+}
